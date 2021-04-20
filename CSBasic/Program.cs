@@ -33,10 +33,14 @@ namespace CSBasic
             /*
              * comment
              */
-            /// xml comment
+            /// xml comment 
 
+            // 출력
+            Console.Write("이건 안개행");
+            Console.Write("입니당");
+            Console.WriteLine("이건 개행");
+            Console.WriteLine("입니당");
 
-            Console.WriteLine("Hello");
         }
     }
 }
