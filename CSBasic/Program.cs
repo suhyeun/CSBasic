@@ -78,7 +78,52 @@ namespace CSBasic
             Console.WriteLine("미림여자정보\t과학고");
             Console.WriteLine("미림여자정보과\t학고");
             Console.WriteLine("미림여자정보과학\t고");
-            Console.WriteLine("미림여자정보과학고\t"); 
+            Console.WriteLine("미림여자정보과학고\t");
+
+            // 문자열 연산자
+            // concat concatenate operator
+            // concatenation operator
+            Console.WriteLine("ABC" + "EFG");
+            Console.WriteLine('A' + 'E'); // 134
+            Console.WriteLine("ABC" + 'E');
+
+            Console.WriteLine("ABC"[2]);
+            // Console.WriteLine("ABC"[3]); // 예외 발생
+
+            // bool
+            bool isPlay = true;
+            bool isDeath = false;
+
+            // compatrison operator
+            Console.WriteLine(52 == 163);
+            Console.WriteLine(52 != 163);
+            Console.WriteLine(52 > 163);
+            Console.WriteLine(52 < 163);
+            Console.WriteLine(52 >= 163);
+            Console.WriteLine(52 <= 163);
+
+            // Logic operator
+            Console.WriteLine(!(true));
+            Console.WriteLine(true || false);
+            Console.WriteLine(true && false);
+
+            // 단항연산자 - unary operator
+            Console.WriteLine(!(true));
+            int i = 0;
+            i++;
+
+            // 이항연산자 - binary operator
+            i = 1 + 2;
+
+
+            // 삼항연산자 - ternary operator
+            int j;
+            j = (j>3) ? 0 : 1;
+
+            // Console.WriteLine(3 < i < 10);
+            Console.WriteLine(3 < i && i < 8);
+            Console.WriteLine(3 > i || i > 8);
+            Console.WriteLine(i < 3 || 8 < i);
 
 
         }
