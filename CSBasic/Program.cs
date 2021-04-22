@@ -117,13 +117,42 @@ namespace CSBasic
 
 
             // 삼항연산자 - ternary operator
-            int j;
+            int j = 3;
             j = (j>3) ? 0 : 1;
 
             // Console.WriteLine(3 < i < 10);
             Console.WriteLine(3 < i && i < 8);
             Console.WriteLine(3 > i || i > 8);
             Console.WriteLine(i < 3 || 8 < i);
+
+            int a = 2147483540;
+            int b = 100000000;
+            Console.WriteLine((long)a + b);
+
+            Console.WriteLine(int.MinValue);
+            Console.WriteLine(int.MaxValue);
+            Console.WriteLine(double.MaxValue);
+
+            Console.WriteLine(-int.MaxValue);
+            // Console.WriteLine(-int.MinValue); // 에러 발생
+
+            Console.WriteLine(3L);
+            Console.WriteLine(3l);
+
+            Console.WriteLine(3);
+            Console.WriteLine(3.0);
+            char c = 'a';
+            Console.WriteLine(c);
+
+            // sizeof 자료형
+            Console.WriteLine("int : " + sizeof(int));
+            Console.WriteLine("int : " + sizeof(long));
+            Console.WriteLine("int : " + sizeof(float));
+            Console.WriteLine("int : " + sizeof(double));
+            Console.WriteLine("int : " + sizeof(char));
+
+            bool IsLive = true;
+
 
 
         }
