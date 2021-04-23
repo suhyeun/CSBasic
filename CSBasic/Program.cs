@@ -202,6 +202,17 @@ namespace CSBasic
             Console.WriteLine(someb.GetType());
             Console.WriteLine(somec.GetType());
 
+            string input;
+            while (true)
+            {
+                Console.WriteLine("입력 > ");
+                input = Console.ReadLine();
+                if (input.Equals("q"))
+                    break;
+                else
+                    Console.WriteLine(input);
+            }
+
 
 
 
