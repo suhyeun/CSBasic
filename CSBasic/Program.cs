@@ -8,6 +8,9 @@ namespace CSBasic
 {
     class Program
     {
+        // var something = "baba";
+        // var키워드는 지역변수로만 사용 가능 
+
         static void Main(string[] args)
         {
             // var keyword는 지역변수(메서드 내)에서만 사용가능
@@ -174,6 +177,30 @@ namespace CSBasic
             output3 += " World";
             output3 = output3 + "?!";
             Console.WriteLine(output3);
+
+            int _int = 273;
+            long _long = 2837648173648;
+            float _float = 52.723f;
+            double _double = 56.77;
+            char _char = '귤';
+            string _string = "문자열";
+
+            // 자료형 검사
+            // GetType() 메서드 활용
+            Console.WriteLine(_int.GetType());
+            Console.WriteLine(_long.GetType());
+            Console.WriteLine(_float.GetType());
+            Console.WriteLine(_double.GetType());
+            Console.WriteLine(_char.GetType());
+            Console.WriteLine(_string.GetType());
+
+            var soema = "마음에 드는 문자열";
+            var someb = 42;
+            var somec = 3.13435;
+            Console.WriteLine(soema.GetType());
+            Console.WriteLine(someb.GetType());
+            Console.WriteLine(somec.GetType());
+
 
 
 
