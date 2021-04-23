@@ -153,6 +153,14 @@ namespace CSBasic
 
             bool IsLive = true;
 
+            // 증감연산자 - 섞어서 쓸 경우
+            // 전위, 후위에 따라서 출력값이 변할 수 있으니 주의
+            int num = 10;
+            Console.WriteLine(num++); // 출력값 : 10
+            Console.WriteLine(++num); // 출력값 : 12
+            Console.WriteLine(num--); // 출력값 : 12
+            Console.WriteLine(--num); //출력값 : 10
+
 
 
         }
