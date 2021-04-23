@@ -194,6 +194,7 @@ namespace CSBasic
             Console.WriteLine(_char.GetType());
             Console.WriteLine(_string.GetType());
 
+            // var
             var soema = "마음에 드는 문자열";
             var someb = 42;
             var somec = 3.13435;
