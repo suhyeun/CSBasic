@@ -58,6 +58,7 @@ namespace CSBasic2
             }
 
             // switch문을 사용한 계절 구하기
+            // 매직넘버 주의
             Console.Write("이번 달은 몇 월 인가요? >> ");
             int input = int.Parse(Console.ReadLine());
 
