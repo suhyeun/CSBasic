@@ -81,6 +81,11 @@ namespace CSBasic2
                     break;
             }
 
+            // 삼항연산자 실습
+            string input2 = Console.ReadLine();
+            int number = int.Parse(input2);
+            Console.WriteLine((number > 0) ? "자연수" : "자연수 아님"); // 조건문은 감싸주기
+
         }
     }
 }
