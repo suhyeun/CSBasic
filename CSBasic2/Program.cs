@@ -86,6 +86,59 @@ namespace CSBasic2
             int number = int.Parse(input2);
             Console.WriteLine((number > 0) ? "자연수" : "자연수 아님"); // 조건문은 감싸주기
 
+            // 제어문 응용
+            Console.Write("입력 >> ");
+            string line = Console.ReadLine();
+            if (line.Contains("안녕"))
+            {
+                Console.WriteLine("하이하이");
+            }else if (line.Contains("바보"))
+            {
+                Console.WriteLine("ㅇ");
+            }else if (line.Contains("밥"))
+            {
+                Console.WriteLine("오늘 점심 우동~~~");
+            }
+            else
+            {
+                Console.WriteLine("구랭~~~~~~~~~~~~~~~~");
+            }
+
+
+            //
+            bool isLoop = true;
+            while (isLoop)
+            {
+                ConsoleKeyInfo info = Console.ReadKey();
+                switch (info.Key)
+                {
+                    case ConsoleKey.UpArrow:
+                        Console.WriteLine("↑");
+                        break;
+
+                    case ConsoleKey.DownArrow:
+                        Console.WriteLine("↓");
+                        break;
+
+                    case ConsoleKey.RightArrow:
+                        Console.WriteLine("→");
+                        break;
+
+                    case ConsoleKey.LeftArrow:
+                        Console.WriteLine("←");
+                        break;
+
+                    case ConsoleKey.Escape:
+                        Console.WriteLine("아악");
+                        isLoop = false;
+                        break;
+                    default:
+                        Console.WriteLine("Unknown Key");
+                        break;
+                }
+            }
+            
+
         }
     }
 }
