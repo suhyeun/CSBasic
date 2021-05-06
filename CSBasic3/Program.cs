@@ -13,6 +13,7 @@ namespace CSBasic3
             // Console.WriteLine(intArray[100]); // 범위 초과, 예외 발생
             // Console.WriteLine(intArray[-1]); // 음수 사용 불가, 예외 발생
 
+            // while / do while
             int i = 0;
             int[] intArray2 = { 52, 273, 32, 65, 103};
             while (i < intArray2.Length)
@@ -27,6 +28,12 @@ namespace CSBasic3
                 Console.WriteLine("입력종료(exit): ");
                 input = Console.ReadLine();
             } while (input != "exit");
+
+            // for
+            for(int j = '가'; j<='힣'; j++)
+            {
+                Console.Write((char)j);
+            }
 
         }
     }
