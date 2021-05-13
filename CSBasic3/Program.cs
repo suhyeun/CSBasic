@@ -161,7 +161,6 @@ namespace CSBasic3
 
                 Thread.Sleep(1000);
                 x++;
-                
             }
 
         }
