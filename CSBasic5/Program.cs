@@ -159,6 +159,7 @@ namespace CSBasic5
             Console.WriteLine(Sample.value);
             Console.WriteLine("세 번째 위치");
 
+
         }
     }
 }
