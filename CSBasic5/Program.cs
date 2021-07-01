@@ -60,6 +60,7 @@ namespace CSBasic5
             Test test = new Test();
             Console.WriteLine(test.Sum(1, 100));
 
+
         }
     }
 }
