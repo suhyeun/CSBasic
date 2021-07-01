@@ -8,6 +8,37 @@ namespace CSBasic5
 {
     class Program
     {
+        public int instanceVariable = 10;
+        public int instanceMethod()
+        {
+            return 0;
+        }
+
+        class MyMath
+        {
+            public static int Abs(int input)
+            {
+                return (input < 0) ? -input : input;
+            }
+
+            public static double Abs(double input)
+            {
+                return (input < 0) ? -input : input;
+            }
+
+            public static long Abs(long input)
+            {
+                return (input < 0) ? -input : input;
+            }
+
+            // Abs(long)
+            /* Method Signature가 같은 경우 오버로딩 불가
+             * public static int Abs(long a2)
+             * {
+             *  return 0;
+             * }
+            */
+        }
 
         class Test
         {
@@ -60,7 +91,21 @@ namespace CSBasic5
             Test test = new Test();
             Console.WriteLine(test.Sum(1, 100));
 
+            Console.WriteLine(MyMath.Abs(52));
+            Console.WriteLine(MyMath.Abs(-273));
 
+            // 클래스 메서드 내에서는 인스턴스 변수 / 메서드 접근 불가
+            // 객체를 만들어 접근해야한다.
+            // Console.WriteLine(instanceVariable);
+            // instanceMethod();
+            Program program = new Program();
+            Console.WriteLine(program.instanceVariable);
+            program.instanceMethod();
+
+            Console.WriteLine(MyMath.Abs(52));
+            Console.WriteLine(MyMath.Abs(-273));
+            Console.WriteLine(MyMath.Abs(52.273));
+            Console.WriteLine(MyMath.Abs(21438274812231));
         }
     }
 }
