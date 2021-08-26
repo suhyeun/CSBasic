@@ -40,20 +40,26 @@ namespace Chapter6_FormPrac
                 case DialogResult.Yes:
                     MessageBox.Show("좋은 하루~!", "시스템");
                     break;
-                case DialogResult.Cancel:
+                case DialogResult.No:
+                    MessageBox.Show("가서 쉬세용!", "바잉");
+                    break;
 
             }
         }
 
         private void btnModaless1_Click(object sender, EventArgs e)
         {
+            Form form = new FormCustom();
+            IsMdiContainer = true;
+
             if(sender == btnModaless1)
             {
+                form.MdiParent = this;
                 form.Show();
             }
             else if(sender == btnModal)
             {
-                form.showDialog();
+                form.ShowDialog();
             }
         }
     }
