@@ -20,7 +20,7 @@ namespace CSBasic7_FormPrac
         private void 상태표시줄ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             상태표시줄ToolStripMenuItem.Checked = !상태표시줄ToolStripMenuItem.Checked;
-            statusStrip1.Visible = 상태표시줄ToolStripMenuItem.Checked;
+            statusStrip1.Visible = 상태표시줄ToolStripMenuItem.Checked; //
         }
     }
 }
