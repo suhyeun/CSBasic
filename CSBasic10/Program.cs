@@ -25,19 +25,25 @@ namespace CSBasic10
                 new Product() {Name="생크림", Price = 4500}
             };
             // 정렬
-            products.Sort(SortWithPrice);
+            products.Sort((x,y)=>
+            {
+                return x.Price.CompareTo(y.Price);
+            });
 
+            // 출력
             foreach(var item in products)
             {
                 Console.WriteLine(item.Name + ":" + item.Price);
             }
-
+            
 
         }
-
+        
+        /*
         private static int SortWithPrice(Product x, Product y)
         {
             return x.Price.CompareTo(y.Price);
         }
+        */
     }
 }
